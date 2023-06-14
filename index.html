@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nemesis</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./styles/toolbar.css" />
+    <link rel="stylesheet" href="./styles/logs.css" />
+    <link rel="stylesheet" href="./styles/status.css" />
+    <script defer src="render.js"></script>
+
+  </head>
+  <body>
+    <div class="body-content">
+        <div class="body-content-top">NEMESIS</div>
+        <div class="body-content-middle">
+ 
+        <div class="body-content-container-left">
+            <div class="body-content-container-left-toolbar-item
+            body-content-container-left-toolbar-item-title">toolbar</div>
+
+            <div class="body-content-container-left-toolbar-item
+            body-content-container-left-toolbar-item-ssh">SSH Login
+                <div class="ssh-login-container">
+                    <div class="ssh-login-titles">
+                        <div class="ssh-login-title-host">Host</div>
+                        <div class="ssh-login-title-user">User</div>
+                        <div class="ssh-login-title-pass">Password</div>
+                    </div>
+                    <div class="ssh-login-credentials">
+                        <div class="ssh-login-creds-host"> <input id="hostInput" required/></div>
+                        <div class="ssh-login-creds-user"> <input id="userInput" required/></div>
+                        <div class="ssh-login-creds-pass"> <input id="passwordInput" required type="password"/></div>
+                        
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="body-content-container-left-toolbar-item
+            body-content-container-left-toolbar-item-target">Target
+                <input id = 'targetInput' required/>
+            </div>
+            <div class="body-content-container-left-toolbar-item">
+                <div class="api-key-input" id="apiKeyInput">
+                    API Key
+                    <input>
+                </div>
+                <div class="toggle-model">
+                    GPT4
+                    <label class="switch">
+                        <input type="checkbox" id="toggleButton">
+                        <span class="slider"></span>
+                      </label>
+                </div>
+            </div>
+            <div class="body-content-container-left-toolbar-item">
+                 <button id="startAppButton" class="start-app-button">START</button>
+                 <div class="status-message" id="setupMessage"></div>
+                </div>
+           
+        </div>
+
+
+
+        <div class="body-content-container-center">
+            <div class="status-header">Status</div>
+            <div class="status-body">
+                <div id="display-status" class="display-status">
+                    <div class="single-status"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="body-content-container-right">
+            <div class="logs-container">
+                <div class="logs-header">Logs</div>
+                <div class="logs-body">
+                    <div id="display-logs" class="display-logs"></div>
+                </div>
+            </div>
+            
+        </div>
+   
+  
+    </div>
+    <div class="body-content-bottom">
+        <div class="download-container">
+            <div class="download-title">Download Report</div>
+            <div class="download-button-container">
+                <div class="download-button" id="downloadButton">
+                    <img src="./images/downloads-32.png" alt="Download Icon">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  </body>
+</html>

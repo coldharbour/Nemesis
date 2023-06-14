@@ -1,0 +1,25 @@
+{
+  "name": "nemesis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@dqbd/tiktoken": "^1.0.7",
+    "cli-spinner": "^0.2.10",
+    "dotenv": "^16.0.3",
+    "electron": "^24.4.0",
+    "node-pty": "^0.10.1",
+    "nodemon": "^2.0.22",
+    "openai": "^3.2.1",
+    "ssh2": "^1.11.0"
+  },
+  "devDependencies": {
+    "electron-reload": "^2.0.0-alpha.1"
+  }
+}

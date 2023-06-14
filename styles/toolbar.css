@@ -1,0 +1,236 @@
+.body-content-container-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.body-content-container-left-toolbar-item {
+    width: 100%;
+    height: 22.5%;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    font-family: pixels;
+    flex-direction: column;
+
+}
+
+.body-content-container-left-toolbar-item-title {
+    color: red;
+    font-size: 24px;
+    font-family: blockyfront;
+    height: 10%;
+}
+
+.body-content-container-left-toolbar-item-target {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.body-content-container-left-toolbar-item-target input {
+    background-color: black;
+    color: red;
+    font-family: pixels;
+    border: 2px solid red;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.body-content-container-left-toolbar-item-target input:focus {
+    outline: none;
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: 0 0 8px 2px #ff0000;
+  }
+.body-content-container-left-toolbar-item-ssh {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.ssh-login-container {
+    margin-top: 10px;
+    height: 80px;
+    width: 250px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+}
+
+.ssh-login-titles {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.ssh-login-title-user, .ssh-login-title-pass, .ssh-login-title-host {
+    height: 100%;
+    width: 100%;
+    font-family: pixels;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 10px;
+}
+
+.ssh-login-credentials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ssh-login-creds-user, .ssh-login-creds-pass, .ssh-login-creds-host {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.ssh-login-credentials input {
+    width: 80%;
+    background-color: black;
+    color: red;
+    font-family: pixels;
+    border: 1px solid red;
+    font-size: 8px;
+    height: 12px;
+
+}
+
+.ssh-login-credentials input:focus {
+    outline: none;
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: 0 0 8px 2px #ff0000;
+  }
+
+
+.start-app-button {
+ color: red;
+ background-color: black;
+ border: 2px solid red;
+ border-radius: 4px;
+ height: 30px;
+width: 70px;
+cursor: pointer;
+font-family: pixels;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.status-message {
+  width: 100%;
+  height: 30%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+  font-family: pixels;
+}
+
+.api-key-input {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.toggle-model {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+   
+}
+
+.api-key-input input {
+    background-color: black;
+    color: red;
+    font-family: pixels;
+    border: 2px solid red;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.api-key-input input:focus {
+    outline: none;
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: 0 0 8px 2px #ff0000;
+  }
+
+
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    outline: 2px solid red;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: red;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #ff0000; 
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #ff0000;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background-color: black;
+    height: 30px;  /* Increased size */
+    width: 30px;   /* Increased size */
+    left: 2px;     /* Adjust left position */
+    bottom: 2px;   /* Adjust bottom position */
+  }
+  
+  
+  

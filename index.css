@@ -1,0 +1,185 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+      Arial, sans-serif;
+    margin: auto;
+    overflow: hidden;
+    background-color: black;
+   
+    height: 100vh;
+    width: 100vw;
+
+  }
+
+/* fonts */
+@font-face {
+    font-family: "Cyber";
+    src: url("./fonts/NetWorld.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "mech";
+    src: url("./fonts/mech.otf");
+  }
+
+  @font-face {
+    font-family: "cyberpunk";
+    src: url("./fonts/Cynatar.otf");
+  }
+  
+  @font-face {
+    font-family: "pixels";
+    src: url("./fonts/dogicapixel.otf");
+  }
+  
+  @font-face {
+    font-family: oldschool;
+    src: url("./fonts/oldschool.ttf");
+  }
+  
+  @font-face {
+    font-family: blockyFront;
+    src: url("./fonts/blockyFront.otf");
+  }
+  
+  @font-face {
+    font-family: blockyBack;
+    src: url("./fonts/blockyBack.otf");
+  }
+
+  @font-face {
+    font-family: Cyber2;
+    src: url('./fonts/Cyberthic.otf');
+  }
+
+  @font-face {
+    font-family: infected;
+    src: url('./fonts/INFECTED.ttf');
+  }
+
+
+
+  .body-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .body-content-top {
+    width: 100%;
+    height: 10%;
+    border: 2px solid red;
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    font-family: cyberpunk;
+    font-size: 90px;
+
+  }
+
+  .body-content-middle {
+    width: 100%;
+    height: 80%;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+  }
+
+
+
+
+  
+  .body-content-container-left {
+    height: 100%;
+    width: 15%;
+    border: 2px solid red;
+  }
+ 
+  .body-content-container-center {
+    height: 100%;
+    width: 35%;
+    border: 2px solid red;
+  }
+
+  .body-content-container-right {
+    height: 100%;
+    width: 50%;
+    border: 2px solid red;
+    color: red;
+  }
+
+  /* This is for the overall scrollbar (track) */
+::-webkit-scrollbar {
+  width: 12px;  /* for vertical scrollbars */
+  height: 12px; /* for horizontal scrollbars */
+
+
+
+}
+
+/* This is for the thumb (the part you drag) */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 6px ;
+  background: red;
+
+
+
+  border: 2px solid transparent; /* This will create a tiny space between the track and thumb */
+  background-clip: content-box;
+
+}
+
+/* This is for when you're hovering over the scrollbar */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff5555; /* Slightly lighter red */
+}
+
+.body-content-bottom {
+  width: 100%;
+  height: 10%;
+  border: 2px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 25%;
+ 
+
+}
+
+.download-title {
+  height: 40%;
+  width: 100%;
+  font-size: 20px;
+  font-family: pixels;
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-button-container {
+  height: 40%;
+  width: 100%;
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+

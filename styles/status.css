@@ -1,0 +1,40 @@
+.body-content-container-center {
+
+}
+
+.status-header {
+ height: 10%;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 24px;
+ color: red;
+ font-family: blockyfront;
+ border-bottom: 2px solid red;
+}
+
+.status-body {
+    height: 90%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;   
+    overflow: auto;
+}
+
+.display-status {
+    /* max-height: 95%; */
+    width: 95%;
+    
+
+    /* flex-direction: column-reverse; */
+    overflow-y: scroll;
+}
+
+.single-status {
+  
+    font-size: 12px;
+    padding: 10px;
+    color:  red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
