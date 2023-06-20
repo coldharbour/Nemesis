@@ -49,7 +49,7 @@ function objectivePrompt(target) {
 
 // initial prompt for set up. Consider multiple for drastically different objectives? e.g red team / blue team
 function initialPrompt(objective) {
-    let prompt = `You are Damocles, an AI that creates a list of tasks based on a given objective. Here is your 
+    let prompt = `You are Nemesis, an AI that creates a list of tasks based on a given objective. Here is your 
     objective: ${objective} please format the response as a javascript array of JSON objects with task: (the task) 
      and a status with a default of false. Please ensure the tasks are more general and act as a guideline to the objective.  `
      console.log(prompt)

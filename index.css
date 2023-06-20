@@ -1,9 +1,17 @@
+/* :root {
+  --main-color: black;
+  --background-color: white;
+} */
+:root {
+  --main-color: white;
+  --background-color: black;
+}
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
       Arial, sans-serif;
     margin: auto;
     overflow: hidden;
-    background-color: black;
+    background-color: var(--background-color);
    
     height: 100vh;
     width: 100vw;
@@ -67,12 +75,12 @@ body {
   .body-content-top {
     width: 100%;
     height: 10%;
-    border: 2px solid red;
+    border: 2px solid var(--main-color);
     border-bottom: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: red;
+    color: var(--main-color);
     font-family: cyberpunk;
     font-size: 90px;
 
@@ -81,7 +89,7 @@ body {
   .body-content-middle {
     width: 100%;
     height: 80%;
-    border: 2px solid red;
+    border: 2px solid var(--main-color);
     display: flex;
     flex-direction: row;
   }
@@ -93,20 +101,20 @@ body {
   .body-content-container-left {
     height: 100%;
     width: 15%;
-    border: 2px solid red;
+    border: 2px solid var(--main-color);
   }
  
   .body-content-container-center {
     height: 100%;
     width: 35%;
-    border: 2px solid red;
+    border: 2px solid var(--main-color);
   }
 
   .body-content-container-right {
     height: 100%;
     width: 50%;
-    border: 2px solid red;
-    color: red;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
   }
 
   /* This is for the overall scrollbar (track) */
@@ -122,7 +130,7 @@ body {
 ::-webkit-scrollbar-thumb {
   background: transparent;
   border-radius: 6px ;
-  background: red;
+  background: var(--main-color);
 
 
 
@@ -133,13 +141,13 @@ body {
 
 /* This is for when you're hovering over the scrollbar */
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff5555; /* Slightly lighter red */
+  background: var(--main-color); /* Slightly lighter red */
 }
 
 .body-content-bottom {
   width: 100%;
   height: 10%;
-  border: 2px solid red;
+  border: 2px solid var(--main-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -158,28 +166,24 @@ body {
 
 .download-title {
   height: 40%;
-  width: 100%;
+  width: 50%;
   font-size: 20px;
   font-family: pixels;
-  color: red;
+  color: var(--main-color);
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.download-button-container {
-  height: 40%;
-  width: 100%;
-  color: red;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.download-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border: 2px solid var(--main-color);
+  border-radius: 10px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  word-wrap: none;
+  white-space: nowrap;
 }
+
+
+
 

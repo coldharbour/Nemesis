@@ -1,0 +1,69 @@
+@media only screen and (min-width: 1921px) {
+    
+    .logs-header,
+    .status-header,
+    .body-content-container-left-toolbar-item-title {
+        font-size: 28px;
+        
+    }
+
+    .body-content-container-left-toolbar-item-target input,
+    .api-key-input input {
+        width: 80%;
+    }
+
+    .body-content-container-left-toolbar-item-ssh {
+        font-size: 18px;
+    }
+
+    .ssh-login-container {
+       margin-top: 20px;
+        width: 70%;
+        height: 100px;
+        display: flex;
+        
+    }
+
+    .ssh-login-titles {
+    
+        width: 50%;
+    }
+    .ssh-login-title-user,
+     .ssh-login-title-pass,
+      .ssh-login-title-host {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+       font-size: 12px;
+      }
+
+      .ssh-login-creds-user,
+       .ssh-login-creds-pass,
+        .ssh-login-creds-host {
+            
+            width: 100%;
+        }
+
+        .ssh-login-credentials input {
+            width: 100%;
+            height: 55%;
+            font-size: 10px;
+        }
+
+        .body-content-container-left-toolbar-item-target {
+            font-size: 18px;   
+        }
+
+        .api-key-input {
+            font-size: 18px;
+        }
+
+        .start-app-button {
+            height: 50px;
+            width: 90px;
+            font-size: 16px;
+        }
+
+     
+}
+

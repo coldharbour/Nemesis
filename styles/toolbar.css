@@ -1,3 +1,11 @@
+:root {
+  --main-color: black;
+  --background-color: white;
+}
+/* :root {
+  --main-color: white;
+  --background-color: black;
+} */
 .body-content-container-left {
     display: flex;
     flex-direction: column;
@@ -7,18 +15,18 @@
 .body-content-container-left-toolbar-item {
     width: 100%;
     height: 22.5%;
-    border: 1px solid red;
+    border: 1px solid var(--main-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: red;
+    color: var(--main-color);
     font-family: pixels;
     flex-direction: column;
 
 }
 
 .body-content-container-left-toolbar-item-title {
-    color: red;
+    color: var(--main-color);
     font-size: 24px;
     font-family: blockyfront;
     height: 10%;
@@ -32,10 +40,10 @@
 }
 
 .body-content-container-left-toolbar-item-target input {
-    background-color: black;
-    color: red;
+    background-color: var(--background-color);
+    color: var(--main-color);
     font-family: pixels;
-    border: 2px solid red;
+    border: 2px solid var(--main-color);
     height: 20px;
     margin-top: 10px;
 }
@@ -44,7 +52,7 @@
     outline: none;
     background-color: transparent;
     border-color: transparent;
-    box-shadow: 0 0 8px 2px #ff0000;
+    box-shadow: 0 0 8px 2px var(--main-color);
   }
 .body-content-container-left-toolbar-item-ssh {
     display: flex;
@@ -96,10 +104,10 @@
 
 .ssh-login-credentials input {
     width: 80%;
-    background-color: black;
-    color: red;
+    background-color: var(--background-color);
+    color: var(--main-color);
     font-family: pixels;
-    border: 1px solid red;
+    border: 1px solid var(--main-color);
     font-size: 8px;
     height: 12px;
 
@@ -109,14 +117,14 @@
     outline: none;
     background-color: transparent;
     border-color: transparent;
-    box-shadow: 0 0 8px 2px #ff0000;
+    box-shadow: 0 0 8px 2px var(--main-color);
   }
 
 
 .start-app-button {
- color: red;
- background-color: black;
- border: 2px solid red;
+ color: var(--main-color);
+ background-color: var(--background-color);
+ border: 2px solid var(--main-color);
  border-radius: 4px;
  height: 30px;
 width: 70px;
@@ -134,7 +142,7 @@ justify-content: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: red;
+  color: var(--main-color);
   font-family: pixels;
 }
 
@@ -158,10 +166,10 @@ justify-content: center;
 }
 
 .api-key-input input {
-    background-color: black;
-    color: red;
+    background-color: var(--background-color);
+    color: var(--main-color);
     font-family: pixels;
-    border: 2px solid red;
+    border: 2px solid var(--main-color);
     height: 20px;
     margin-top: 10px;
 }
@@ -170,7 +178,7 @@ justify-content: center;
     outline: none;
     background-color: transparent;
     border-color: transparent;
-    box-shadow: 0 0 8px 2px #ff0000;
+    box-shadow: 0 0 8px 2px var(--main-color);
   }
 
 
@@ -180,7 +188,7 @@ justify-content: center;
     display: inline-block;
     width: 60px;
     height: 34px;
-    outline: 2px solid red;
+    outline: 2px solid var(--main-color);
   }
   
   .switch input { 
@@ -196,7 +204,7 @@ justify-content: center;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: black;
+    background-color: var(--background-color);
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -208,24 +216,24 @@ justify-content: center;
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: red;
+    background-color: var(--main-color);
     -webkit-transition: .4s;
     transition: .4s;
   }
   
   input:checked + .slider {
-    background-color: #ff0000; 
+    background-color: var(--main-color);
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #ff0000;
+    box-shadow: 0 0 1px var(--main-color);
   }
   
   input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
-    background-color: black;
+    background-color: var(--background-color);
     height: 30px;  /* Increased size */
     width: 30px;   /* Increased size */
     left: 2px;     /* Adjust left position */

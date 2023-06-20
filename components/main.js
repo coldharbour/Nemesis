@@ -37,7 +37,18 @@ const prompt = prompts.initialPrompt(objective)
     //generate a task list based off the objective
 
    
-    writeToStatus(JSON.stringify(tasks, null, 2), window)
+    writeToStatus('Task list: ', window)
+
+    for (let i = 0; i < tasks.length; i++) {
+      let task = `Task ${i + 1}. ${tasks[i].task}`
+      
+      writeToStatus(task, window)
+    }
+    
+
+    
+
+
     let firstIteration = true;
 
     for (let i = 0; i < tasks.length;) {
