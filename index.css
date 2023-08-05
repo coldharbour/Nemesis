@@ -1,11 +1,9 @@
-/* :root {
-  --main-color: black;
-  --background-color: white;
-} */
-:root {
-  --main-color: white;
-  --background-color: black;
-}
+
+  :root {
+    --main-color: purple;
+    --background-color: black;
+  }
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
       Arial, sans-serif;

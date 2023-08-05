@@ -1,11 +1,4 @@
-/* :root {
-    --main-color: black;
-    --background-color: white;
-  } */
-  :root {
-    --main-color: white;
-    --background-color: black;
-  }
+
 .logs-container {
     height: 100%;
     width: 100%;

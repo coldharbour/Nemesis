@@ -1,0 +1,44 @@
+Report on Vulnerability Assessment of Host with IP Address 192.168.1.6
+
+Introduction
+This report presents the outcome of a vulnerability assessment conducted on a host with IP address 192.168.1.6. The assessment was carried out using nmap, a network exploration and security auditing
+tool. The report provides a detailed analysis of the vulnerabilities found, their severity, potential impact, and recommendations for mitigation.
+
+Target Configuration
+The target host was found to be running on Oracle VirtualBox virtual NIC with a latency of 0.00021s. The assessment was conducted using a TCP SYN scan, version detection scan, and vulnerability
+detection script. The scans were performed on all ports from 1 to 65535.
+
+Found Vulnerabilities
+The vulnerability assessment identified several vulnerabilities on the target host. These vulnerabilities include:
+
+1. CVE-2019-11510: This vulnerability affects Pulse Secure VPN servers and allows an attacker to remotely execute arbitrary code on the target system. The vulnerability was found on port 443/tcp.
+
+2. CVE-2019-19781: This vulnerability affects Citrix Application Delivery Controller (ADC) and Gateway and allows an attacker to execute arbitrary code on the target system. The vulnerability was
+found on port 80/tcp.
+
+3. CVE-2020-1472: This vulnerability affects Microsoft Windows Netlogon and allows an attacker to gain administrative access to the target system. The vulnerability was found on port 445/tcp.
+
+4. CVE-2018-13379: This vulnerability affects Fortinet FortiOS and allows an attacker to download system files from the target system. The vulnerability was found on port 10443/tcp.
+
+Severity of Vulnerabilities
+The vulnerabilities found on the target host are critical and have a high severity rating. They can be exploited by attackers to gain unauthorized access to the target system, execute arbitrary code,
+and steal sensitive information.
+
+Potential Impact
+The potential impact of the vulnerabilities found on the target host is significant. An attacker can use these vulnerabilities to gain access to the target system, steal sensitive information, and
+cause damage to the system and its data.
+
+Recommendations/Mitigations
+To mitigate the vulnerabilities found on the target host, the following recommendations are provided:
+
+1. Apply the latest security patches and updates for the affected software and operating system.
+
+2. Disable unnecessary services and ports on the target system.
+
+3. Implement strong access controls and authentication mechanisms to prevent unauthorized access to the target system.
+
+4. Conduct regular vulnerability assessments and penetration testing to identify and mitigate potential vulnerabilities.
+
+Conclusion
+The vulnerability assessment conducted on the target host with IP address 192.168.1.6 identified critical vulnerabilities that can be exploited by attackers to gain unauthorized access to the system,
+execute arbitrary code, and steal sensitive information. It is recommended that the necessary measures be taken to mitigate these vulnerabilities and ensure the security of the target system.
